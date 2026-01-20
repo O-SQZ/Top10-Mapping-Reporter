@@ -40,11 +40,11 @@ Top10 Mapping Reporter 시스템의 전체 흐름과
 
 ### 시스템 컨텍스트 다이어그램 (Korean)
 
-![context_ko_v0.1](../diagrams/context/v0.1/context_ko_v0.1.png)
+![context_ko_v0.1](../../diagrams/context/v0.1/context_ko_v0.1.png)
 
 ### System Context Diagram (English)
 
-![context_en_v0.1](../diagrams/context/v0.1/context_en_v0.1.png)
+![context_en_v0.1](../../diagrams/context/v0.1/context_en_v0.1.png)
 
 ---
 

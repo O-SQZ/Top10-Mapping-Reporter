@@ -14,30 +14,30 @@ Top10 Mapping Reporter
 ## 2. 시스템 컨텍스트 (System Context)
 
 ### Context (Korean)
-![context_ko_v0.1](../diagrams/context/v0.1/context_ko_v0.1.png)
+![context_ko_v0.1](../../diagrams/context/v0.1/context_ko_v0.1.png)
 
 ### Context (English)
-![context_en_v0.1](../diagrams/context/v0.1/context_en_v0.1.png)
+![context_en_v0.1](../../diagrams/context/v0.1/context_en_v0.1.png)
 
 ---
 
 ## 3. 유스케이스 (Use Case)
 
 ### Use Case (Korean)
-![usecase_ko_v0.1](../diagrams/usecase/v0.1/usecase_ko_v0.1.png)
+![usecase_ko_v0.1](../../diagrams/usecase/v0.1/usecase_ko_v0.1.png)
 
 ### Use Case (English)
-![usecase_en_v0.1](../diagrams/usecase/v0.1/usecase_en_v0.1.png)
+![usecase_en_v0.1](../../diagrams/usecase/v0.1/usecase_en_v0.1.png)
 
 ---
 
 ## 4. 실행 흐름 (Activity)
 
 ### Activity (Korean)
-![activity_ko_v0.1](../diagrams/activity/v0.1/activity_ko_v0.1.png)
+![activity_ko_v0.1](../../diagrams/activity/v0.1/activity_ko_v0.1.png)
 
 ### Activity (English)
-![activity_en_v0.1](../diagrams/activity/v0.1/activity_en_v0.1.png)
+![activity_en_v0.1](../../diagrams/activity/v0.1/activity_en_v0.1.png)
 
 ---
 
