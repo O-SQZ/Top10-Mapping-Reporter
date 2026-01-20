@@ -5,7 +5,7 @@ actor "User\n(Analyst)" as U
 cloud "Target Web App\n(Local demo / allowed env)" as T
 
 rectangle "Top10 Mapping Reporter" as R {
-  component "Run Checks\n(headers/cookies/exposure/\noptional session)" as C
+  component "Run Checks\n(headers/cookies/exposure)" as C
   component "OWASP Top 10 2025 Mapping\n+ Report (HTML/MD)" as P
   database "runs/<run_id>\nEvidence + Results" as FS
 }

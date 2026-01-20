@@ -91,6 +91,7 @@ Top10 Mapping Reporter 시스템의 전체 흐름과
 
 ### Out-of-Scope (Non-Goals)
 
+- 로그인/세션 기반 시나리오 점검 (예: 로그인 전후 세션 변화, 로그아웃 무효화 확인)
 - SQL Injection, XSS, SSRF 등 공격 페이로드 기반 탐지
 - 취약점 자동 익스플로잇
 - 외부 실서비스에 대한 공격성 스캔

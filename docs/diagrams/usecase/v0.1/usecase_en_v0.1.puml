@@ -1,0 +1,29 @@
+@startuml
+title Top10 Mapping Reporter - Use Cases (v0.1)
+
+left to right direction
+
+actor "User\n(Analyst)" as U
+
+rectangle "Top10 Mapping Reporter" as SYS {
+  usecase "Enter target URL" as UC1
+  usecase "Run checks" as UC2
+  usecase "View results\n(by OWASP category)" as UC3
+  usecase "Download report\n(HTML/MD)" as UC4
+  usecase "Save evidence files\n(runs/<id>)" as UC5
+}
+
+U --> UC1
+U --> UC2
+U --> UC3
+U --> UC4
+
+UC2 ..> UC5 : <<include>>
+UC2 ..> UC3 : <<include>>
+
+note right of SYS
+No login/session flows in MVP.
+HTTP response-based checks only.
+end note
+
+@enduml

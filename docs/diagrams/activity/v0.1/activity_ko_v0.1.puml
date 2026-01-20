@@ -1,0 +1,29 @@
+@startuml
+title Top10 매핑 리포터 - 액티비티 다이어그램 (v0.1)
+
+start
+
+:대상 URL 입력;
+if (URL 형식 유효?) then (예)
+  :점검 실행 요청;
+  :HTTP 요청 전송;
+  if (응답 수신 성공?) then (예)
+    :응답에서\n헤더/쿠키/상태코드 수집;
+    :체크리스트 수행;
+    :결과 상태 산출\n(PASS/WEAK/MISSING/OBSERVED/NOT_TESTED);
+    :OWASP Top 10 2025\n카테고리로 매핑;
+    :증거(Evidence) 저장\nruns/<run_id>/;
+    :리포트 생성\n(HTML/Markdown);
+    :리포트 표시/다운로드;
+  else (아니오)
+    :NOT_TESTED 처리\n(통신/타임아웃 등);
+    :실패 근거 저장\n(에러 로그/상태);
+    :리포트 생성\n(실패 요약 포함);
+    :리포트 표시;
+  endif
+else (아니오)
+  :입력 오류 안내;
+endif
+
+stop
+@enduml

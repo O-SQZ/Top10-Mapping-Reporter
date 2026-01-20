@@ -1,0 +1,29 @@
+@startuml
+title Top10 Mapping Reporter - Activity Diagram (v0.1)
+
+start
+
+:Enter target URL;
+if (Valid URL format?) then (Yes)
+  :Request "Run checks";
+  :Send HTTP requests;
+  if (Response received?) then (Yes)
+    :Collect headers/cookies/status;
+    :Run checklist checks;
+    :Compute result status\n(PASS/WEAK/MISSING/OBSERVED/NOT_TESTED);
+    :Map results to\nOWASP Top 10 2025 categories;
+    :Save evidence\nruns/<run_id>/;
+    :Generate report\n(HTML/Markdown);
+    :View / Download report;
+  else (No)
+    :Mark as NOT_TESTED\n(network/timeout, etc.);
+    :Save failure evidence\n(error logs/status);
+    :Generate report\n(with failure summary);
+    :View report;
+  endif
+else (No)
+  :Show input error;
+endif
+
+stop
+@enduml

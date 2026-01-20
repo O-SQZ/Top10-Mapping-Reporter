@@ -1,0 +1,29 @@
+@startuml
+title Top10 매핑 리포터 - 유스케이스 (v0.1)
+
+left to right direction
+
+actor "사용자\n(진단 실행자)" as U
+
+rectangle "Top10 매핑 리포터" as SYS {
+  usecase "대상 URL 입력" as UC1
+  usecase "점검 실행" as UC2
+  usecase "점검 결과 조회\n(카테고리별)" as UC3
+  usecase "리포트 다운로드\n(HTML/MD)" as UC4
+  usecase "증거 파일 저장\n(runs/<id>)" as UC5
+}
+
+U --> UC1
+U --> UC2
+U --> UC3
+U --> UC4
+
+UC2 ..> UC5 : <<include>>
+UC2 ..> UC3 : <<include>>
+
+note right of SYS
+세션/로그인 기반 시나리오는 MVP 범위에서 제외
+(HTTP 응답 기반의 관찰/점검만 수행)
+end note
+
+@enduml
