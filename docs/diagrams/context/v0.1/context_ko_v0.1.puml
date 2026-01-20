@@ -1,0 +1,24 @@
+@startuml
+title Top10 매핑 리포터 - 시스템 컨텍스트 (v0.1)
+
+actor "사용자\n(진단 실행자)" as U
+cloud "대상 웹 애플리케이션\n(로컬 데모/허가 환경)" as T
+
+rectangle "Top10 매핑 리포터" as R {
+  component "점검 실행\n(헤더/쿠키/노출/세션 선택)" as C
+  component "OWASP Top 10 2025 매핑\n+ 리포트 생성(HTML/MD)" as P
+  database "runs/<run_id>\n증거 + 결과" as FS
+}
+
+U --> R : ① URL 입력 / 실행
+R --> T : ② HTTP 요청
+T --> R : ③ HTTP 응답\n(헤더/쿠키/상태)
+R --> FS : ④ 증거 저장
+R --> U : ⑤ 리포트 표시/다운로드
+
+note right of R
+공격 페이로드 기반 탐지는 제외
+(관찰 가능한 근거 중심)
+end note
+
+@enduml

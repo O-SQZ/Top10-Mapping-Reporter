@@ -1,0 +1,24 @@
+@startuml
+title Top10 Mapping Reporter - System Context (v0.1)
+
+actor "User\n(Analyst)" as U
+cloud "Target Web App\n(Local demo / allowed env)" as T
+
+rectangle "Top10 Mapping Reporter" as R {
+  component "Run Checks\n(headers/cookies/exposure/\noptional session)" as C
+  component "OWASP Top 10 2025 Mapping\n+ Report (HTML/MD)" as P
+  database "runs/<run_id>\nEvidence + Results" as FS
+}
+
+U --> R : ① Input URL / Run
+R --> T : ② HTTP requests
+T --> R : ③ HTTP responses\n(headers, cookies, status)
+R --> FS : ④ Save evidence
+R --> U : ⑤ View / Download report
+
+note right of R
+No payload-based attacks.
+Evidence-driven reporting.
+end note
+
+@enduml
