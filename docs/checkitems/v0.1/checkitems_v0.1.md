@@ -47,7 +47,7 @@ Top10 Mapping Reporter
 | EXP-04 | sitemap.xml 존재 여부 | OBSERVED / MISSING |
 
 ※ 본 그룹은 **취약점 판정(PASS/WEAK)을 사용하지 않으며**,  
-존재 여부 자체를 보안상 의미 있는 요소로 **식별(OBSERVED) **한다.
+존재 여부 자체를 보안상 의미 있는 요소로 **식별**한다.
 
 ---
 
