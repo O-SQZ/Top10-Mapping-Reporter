@@ -98,7 +98,7 @@ Top10-Mapping-Reporter/
 ├─ checks/         # Individual check logic
 ├─ report/         # Report rendering logic
 ├─ runs/           # Evidence & results (gitignored)
-├─ docs/           # Diagrams & design documents
+├─ docs/           # Diagrams & Documents
 └─ README.md 
 ``` 
 
