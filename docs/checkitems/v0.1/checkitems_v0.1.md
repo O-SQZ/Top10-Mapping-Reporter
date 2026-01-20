@@ -5,7 +5,7 @@ Top10 Mapping Reporter
 **점검 항목(CheckItem)의 전체 목록과 OWASP Top 10 2025 매핑 기준**을 정의한다.
 
 각 CheckItem은 공격이나 행위 검증 없이,  
-**HTTP 요청/응답을 통해 관찰 가능한 근거(Evidence)**만을 기반으로 한다.
+**HTTP 요청/응답을 통해 관찰 가능한 근거**만을 기반으로 한다.
 
 ---
 
@@ -47,7 +47,7 @@ Top10 Mapping Reporter
 | EXP-04 | sitemap.xml 존재 여부 | OBSERVED / MISSING |
 
 ※ 본 그룹은 **취약점 판정(PASS/WEAK)을 사용하지 않으며**,  
-존재 여부 자체를 보안상 의미 있는 요소로 **식별(OBSERVED)**한다.
+존재 여부 자체를 보안상 의미 있는 요소로 **식별(OBSERVED) **한다.
 
 ---
 
