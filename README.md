@@ -120,8 +120,8 @@ OWASP Top 10을 학습하며 다음과 같은 간극을 느꼈습니다.
 
 ## 결과물 스크린샷
 - 데모웹 점검 결과입니다.
-![alt text](<스크린샷 2026-01-22 오후 5.17.06.png>) 
-![alt text](<스크린샷 2026-01-22 오후 5.17.21.png>)
+![report_01](docs/screenshot/report_01.png) 
+![report_02](docs/screenshot/report_02.png)
 
 ---
 
